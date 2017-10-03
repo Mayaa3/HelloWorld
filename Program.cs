@@ -7,9 +7,15 @@ namespace HelloWorld
         public static void Main(string[] args)
         {
             Console.WriteLine("write 2 numbers");
-            String number1= Console.ReadLine();
-            String number2 = Console.ReadLine();
-            Console.WriteLine(number1 + " " +  number2);
+            float number1= float.Parse(Console.ReadLine());
+            float number2 = float.Parse(Console.ReadLine());
+            Console.WriteLine(AddTwoNumbers(number1, number2));
+        }
+
+        public static float AddTwoNumbers(float n1, float n2)
+        {
+            float result = n1 + n2;
+            return result;
         }
     }
 }
